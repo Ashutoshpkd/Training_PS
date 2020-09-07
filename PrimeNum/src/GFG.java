@@ -5,7 +5,6 @@ public class GFG {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
         System.out.print(getLargestPrime(n));
-        inputThenPrintSumAndAverage();
     }
 
     public static int getLargestPrime(int number)
@@ -34,28 +33,5 @@ public class GFG {
             }
         }
         return -1;
-    }
-    public static void inputThenPrintSumAndAverage()
-    {
-        Scanner input = new Scanner(System.in);
-        String str;
-        int sum,count=0;
-        long avg;
-
-        while(true)
-        {
-            str = input.nextLine();
-            if(str >= 'a' && str <= 'z' || str >= 'A' && str <= 'Z')
-            {
-                break;
-            }
-            count++;
-            int n = Integer.parseInt(str);
-            sum += n;
-        }
-
-        avg = Math.round(sum/count);
-        System.out.println("SUM = "+sum+" AVG = "+avg);
-
     }
 }
