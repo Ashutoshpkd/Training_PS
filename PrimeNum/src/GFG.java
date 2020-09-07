@@ -6,6 +6,7 @@ public class GFG {
         int n = input.nextInt();
         System.out.print(getLargestPrime(n));
         inputThenPrintSumAndAverage();
+        System.out.println("Will be in master soon");
     }
 
     public static int getLargestPrime(int number)
